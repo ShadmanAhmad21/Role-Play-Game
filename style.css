@@ -18,10 +18,11 @@ body {
 
 #game {
     width: 90%; /* Adjust as needed */
+    max-width: 600px; /* Add a max-width for responsiveness */
     background-color: #5D3587;
     color: #FF9800;
     margin: auto;
-    padding: 60px; /* Adjust as needed */
+    padding: 40px; /* Adjust as needed */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -34,19 +35,10 @@ body {
 }
 
 #controls,
-#stats {
-    border: 1px solid #0a0a23;
-    padding: 15px; /* Adjust as needed */
-    margin-bottom: 15px; /* Adjust as needed */
-    border-radius: 5px;
-}
-
+#stats,
 #monsterStats {
-    display: none;
     border: 1px solid #0a0a23;
     padding: 15px; /* Adjust as needed */
-    color: #ffffff;
-    background-color: #c70d0d;
     margin-bottom: 15px; /* Adjust as needed */
     border-radius: 5px;
 }
@@ -74,4 +66,28 @@ button:hover {
 
 #button2 {
     margin-right: 15px; /* Adjust as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #game {
+        padding: 20px; /* Adjust for smaller screens */
+    }
+
+    #controls,
+    #stats,
+    #monsterStats {
+        padding: 10px; /* Adjust for smaller screens */
+        margin-bottom: 10px; /* Adjust for smaller screens */
+    }
+
+    button {
+        padding: 10px 15px; /* Adjust for smaller screens */
+        font-size: 14px; /* Adjust for smaller screens */
+        margin-right: 10px; /* Adjust for smaller screens */
+    }
+
+    #button2 {
+        margin-right: 10px; /* Adjust for smaller screens */
+    }
 }
